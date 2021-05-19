@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+        <title>Credit Card Validator</title>
+    </head>
+    <body>
+        <div class="main">
+        <h1>Credit Card Validator</h1>
+        <p>Please input the credit card number you would like to validate below.</p>
+
+        <form action="./index.html" method="POST" id="creditCardForm" name="creditCardForm">
+            <label for="creditCardNum"></label>
+            <input type="text" id="creditCardNum" name="creditCardNum" pattern="[0-9]{14,16}" required>
+            <br>
+            <br>
+            <input type="submit" id="submitButton" value="Validate">
+        </form>
+        </div>
+        
+        <div class="note-section">
+            <p><strong>Note:</strong> This validator is using the Luhn Algorithm method.</p>
+        </div>
+        
+        <script type="text/javascript" src="./main.js"></script></script>
+    </body>
+</html>
